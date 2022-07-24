@@ -1,0 +1,184 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper
+{
+   
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+.text-center
+{
+    text-align: center;   
+}
+.text-left
+{
+    text-align: left;
+}
+.clearfix
+{
+    float: none;
+    clear: both;
+}
+
+.tbl-full
+{
+    width: 100%;
+}
+.tbl-30
+{
+    width: 30%;
+}
+table tr th
+{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td
+{
+    padding: 1%;
+}
+.btn-primary
+{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary
+{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover
+{
+    background-color: #3742fa;
+}
+
+.btn-danger
+{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover
+{
+    background-color: #ff4757;
+}
+
+.success
+{
+    color: #2ed573;
+}
+.error
+{
+    color: #ff4757;
+}
+
+
+/*menu*/
+.menu
+{
+    border-bottom: 1px solid black;
+}
+.menu ul
+{
+    list-style-type: none;
+
+}
+
+.menu ul li
+{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b87;
+}
+.menu ul li a:hover
+{
+    background-color: #ff4757;
+    color: #fff;
+}
+
+
+/*menu content*/
+
+.main-content
+{
+    padding: 3% 0;
+    background-color: #f1f2f6;
+}
+
+.col-4
+{
+    width: 18%;
+    color: white;
+    background-color: #fff;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+
+}
+
+/* footer */
+.footer
+{
+    background-color: #ff4757;
+    color: #fff;
+}
+
+/* Login */
+
+.login
+{
+    border: 1px solid grey;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+    
+}
+
+.logo
+{
+    width: 81px;
+    float: right;
+    margin: auto;
+    margin-top: -35px;
+}
+
+/* order */
+.btn-danger{
+    border-radius: .125rem;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+    padding: .375rem .5625rem;
+    font-weight: 500;
+}
+
+.badge-gradient-warning {
+    background: linear-gradient(90deg,#f6e384,#ffd500);
+    color: #fff;
+}
