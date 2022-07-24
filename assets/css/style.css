@@ -931,6 +931,12 @@ section {
 .menu .menu-item {
   margin-top: 50px;
 }
+.menu .menu-order 
+{
+    margin: 2% 4%;
+      
+    
+}
 
 .menu .menu-img {
   width: 70px;
@@ -989,6 +995,16 @@ section {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
+}
+.error
+{
+    padding: 2%;
+    color: red;
+}
+.success
+{
+    padding: 2%;
+    color: green;
 }
 
 /*--------------------------------------------------------------
