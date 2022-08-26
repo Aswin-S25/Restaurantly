@@ -190,13 +190,13 @@
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg">
+      <form action="./order.php" method="POST">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Menu</h2>
           <p>Check Our Tasty Menu</p>
         </div>
-
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
@@ -253,6 +253,7 @@
                   ?>
                   
                     <div class="col-lg-6 menu-item filter-<?php echo $arr[$category_id] ?>">
+                      <input type="checkbox" name="check[]" value="<?php echo $id ?>" class="check">
                       <img src="assets/img/menu/<?php echo $image_name ?>" class="menu-img" alt="">
                       <div class="menu-content">
                         <a href="#"><?php echo $title_food ?></a><span>$<?php echo $price ?></span>
@@ -260,19 +261,20 @@
                       <div class="menu-ingredients">
                         <?php echo $description ?>
                       </div>
-                      <div class="menu-order">
-                        <button class="btn-order" style="margin: 2% 4%; border-radius:10px; background-color:#cda45e; border-style: none;"><a style=" color:#fff;" href="<?php echo SITEURL;?>order.php?food_id=<?php echo $id; ?>">Oder now</a></button>
-                      </div>
+                      
                     </div>
                   <?php
             }
           }
           ?>
-          
+          <div class="menu-order">
+                        <button class="btn-order" style="margin: 36% 45%; border-radius:10px; background-color:#cda45e; border-style: none;"><input style="background-color:transparent; border:none; color:#fff" type="submit" name="submit" value="Order Now"></button>
+                      </div>
          
         </div>
 
       </div>
+      </form>
     </section><!-- End Menu Section -->
 
     <!-- ======= Specials Section ======= -->
