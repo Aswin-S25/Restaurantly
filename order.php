@@ -109,7 +109,7 @@
                     <input type="text" name="full-name" placeholder="E.g. Vijay Thapa" class="input-responsive" required>
 
                     <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required="" data-rule="minlen:4" data-msg="Please enter at least 10 digits" maxlength="10">
 
                     <div class="order-label">Email</div>
                     <input type="email" name="email" placeholder="E.g. hi@vijaythapa.com" class="input-responsive" required>
@@ -136,16 +136,40 @@
                     $total = $price * $qty; // total = price x qty 
 
                     $order_date = date("Y-m-d h:i:sa"); //Order DAte
-
                     $status = "Ordered";  // Ordered, On Delivery, Delivered, Cancelled
-
                     $customer_name = $_POST['full-name'];
                     $customer_contact = $_POST['contact'];
                     $customer_email = $_POST['email'];
                     $customer_address = $_POST['address'];
 
+                     $sql1 = "SELECT customer_contact FROM tbl_customer WHERE customer_contact = '$customer_contact'";
+                    $res3 = mysqli_query($conn, $sql1);
+                     $count1 = mysqli_num_rows($res3);
 
+                
+                    //om customer page
+                    if($count1 <= 0 )
+                    {
+                        $sql4 = "INSERT INTO tbl_customer SET
+                        customer_name = '$customer_name',
+                        customer_contact = '$customer_contact',
+                        customer_email = '$customer_email',
+                        customer_address = '$customer_address'
+                        ";
+                        $result = mysqli_query($conn, $sql4);
+                    }
+                    
                     //Save the Order in Databaase
+
+                    $sql3 = "SELECT id FROM tbl_customer where customer_contact = '$customer_contact'";
+                    $res1 = mysqli_query($conn, $sql3);
+                    $count2 = mysqli_num_rows($res1);
+
+                    if($count2 > 0)
+                    {
+                        $id = mysqli_fetch_array($res1);
+
+                    }
                     //Create SQL to save the data
                     $sql2 = "INSERT INTO tbl_order SET 
                         food = '$food',
@@ -154,10 +178,7 @@
                         total = $total,
                         order_date = '$order_date',
                         status = '$status',
-                        customer_name = '$customer_name',
-                        customer_contact = '$customer_contact',
-                        customer_email = '$customer_email',
-                        customer_address = '$customer_address'
+                        customer_id = '$id[0]'
                     ";
 
                     //echo $sql2; die();
@@ -166,6 +187,7 @@
                     $res2 = mysqli_query($conn, $sql2);
 
                     //Check whether query executed successfully or not
+                    
                     if($res2==true)
                     {
                         //Query Executed and Order Saved
@@ -178,7 +200,8 @@
                         $_SESSION['order'] = "<div class='error text-center'>Failed to Order Food.</div>";
                         header('location:'.SITEURL);
                     }
-
+        
+                
                 }
             
             ?>

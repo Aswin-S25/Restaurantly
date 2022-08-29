@@ -33,7 +33,7 @@
 
             <?php 
 
-                $sql = "SELECT * FROM tbl_order ORDER BY id DESC";
+                $sql = "SELECT * FROM tbl_order ORDER BY id DESC LIMIT 7";
                 $res = mysqli_query($conn, $sql);
                 $count = mysqli_num_rows($res);
 
@@ -49,10 +49,19 @@
                         $total = $row['total'];
                         $order_date = $row['order_date'];
                         $status = $row['status'];
-                        $customer_name = $row['customer_name'];
-                        $customer_contact = $row['customer_contact'];
-                        $customer_email = $row['customer_email'];
-                        $customer_address = $row['customer_address'];
+                        $customer_id = $row['customer_id'];
+                   
+                        $sql = "SELECT * FROM tbl_customer WHERE id = '$customer_id'";
+                        $res1 = mysqli_query($conn, $sql);
+                        $count1 = mysqli_num_rows($res);
+                        if($count1 > 0)
+                        {
+                            $row1 = mysqli_fetch_assoc($res1);
+                            $customer_name = $row1['customer_name'];
+                            $customer_contact = $row1['customer_contact'];
+                            $customer_email = $row1['customer_email'];
+                            $customer_address = $row1['customer_address'];
+                        }
                         
                         ?>
                             <tr>
@@ -68,7 +77,7 @@
                                         //ordered, on delivery, delivered, cancelled
                                         if($status == "Ordered")
                                         {
-                                            echo"<label class = 'badge badge-gradient-warning'> $status </label>";
+                                            echo"<label style = 'color:#ffd500';> $status </label>";
                                         }
                                         elseif($status == "On Delivery")
                                         {

@@ -111,8 +111,8 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+ <!-- ======= About Section ======= -->
+ <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -124,18 +124,22 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>WELCOME TO TI AMO CANTEENO</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            If you are looking for good food and faster service , Then no doubt this is the right place!
+            We are been delivering happiness for more than 18 years! We provide a wide variety of dishes which
+            will match almost all tastebuds!
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bi bi-check-circle"></i> Customer satifaction and good food are our main aim.</li>
+              <li><i class="bi bi-check-circle"></i> All our food is freshly prepared on a daily basis ensuring that you 
+              receive only the finest cuisine ,delicious to taste. Our food not only tastes good it looks wonderful as
+               well..</li>
+              <li><i class="bi bi-check-circle"></i> Our staff understand that this is your day and that we need to be polite and courteous. 
+              We strive for excellence both in the quality of our food and in our interaction with you.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Through this virtual platform of TI AMO we are providing our customers to take a glance at the wide
+              variety of cusines we are offering and also provide an extra feature to place order for the food item that
+              they wish to do.
             </p>
           </div>
         </div>
@@ -143,8 +147,8 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -159,7 +163,9 @@
               <span>01</span>
               <img style="width: 100px;" src="http://demo.exptheme.com/laboom/wp-content/uploads/2017/06/fancy1.png" alt="">
               <h4>Fresh Dishes</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+              <p>We do not compromise with the quality of food that we are offering.
+                We provide only fresh food.
+              </p>
             </div>
           </div>
 
@@ -170,7 +176,7 @@
               <span>02</span>
               <img style="width: 140px;" src="http://demo.exptheme.com/laboom/wp-content/uploads/2017/06/fancy3.png" alt="">
               <h4>Well Service</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+              <p>Customer's happiness is our happiness. So we provide a great service to our customers.</p>
             </div>
           </div>
 
@@ -179,7 +185,9 @@
               <span>03</span>
               <img style="width: 125px;" src="http://demo.exptheme.com/laboom/wp-content/uploads/2017/06/fancy4.png" alt="">
               <h4>Fast Delivery</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</p>
+              <p>We give total respect to our customer's time so we are here to provide food deliveries 
+                within no time!
+              </p>
             </div>
           </div>
 
@@ -253,7 +261,6 @@
                   ?>
                   
                     <div class="col-lg-6 menu-item filter-<?php echo $arr[$category_id] ?>">
-                      <input type="checkbox" name="check[]" value="<?php echo $id ?>" class="check">
                       <img src="assets/img/menu/<?php echo $image_name ?>" class="menu-img" alt="">
                       <div class="menu-content">
                         <a href="#"><?php echo $title_food ?></a><span>$<?php echo $price ?></span>
@@ -261,15 +268,15 @@
                       <div class="menu-ingredients">
                         <?php echo $description ?>
                       </div>
-                      
+                      <div class="menu-order">
+                        <button class="btn-order" style="margin: 2% 4%; border-radius:10px; background-color:#cda45e; border-style: none;"><a style=" color:#fff;" href="order.php?food_id=<?php echo $id; ?>">Oder now</a></button>
+                      </div>
                     </div>
                   <?php
             }
           }
           ?>
-          <div class="menu-order">
-                        <button class="btn-order" style="margin: 36% 45%; border-radius:10px; background-color:#cda45e; border-style: none;"><input style="background-color:transparent; border:none; color:#fff" type="submit" name="submit" value="Order Now"></button>
-                      </div>
+          
          
         </div>
 
@@ -290,19 +297,19 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Dragon Chicken</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Beef Chilly</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Schezwan Noodles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Chicken Barbecue</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Biriyani</a>
               </li>
             </ul>
           </div>
@@ -311,26 +318,30 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <h3>Dragon chicken</h3>
+                    <p class="fst-italic">Dragon chicken is a popular Indo-Chinese Chicken Recipe</p>
+                    <p>Thin long strips of chicken breast are marinated & the deep fried. It is then
+                      toasted with cashews,veggies, & yummy sauces. Serve it as a starter or side dish with fried rice.
+                    </p>
                   </div>
 
 
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
+                    <img src="assets/img/dra2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>Beef Chilly</h3>
+                    <p class="fst-italic">Chilly beef is one of our signaturte dishes. It is a dish which is having a huge demand</p>
+                    <p>Crispy Chilli Beef is a fried shredded beef steak tossed in sweet, spicy and savoury homemade sweet sauce. 
+                      This recipe is a popular Chinese takeaway style shredded beef strips with a delicious sweet chilli kick.This is made up of rice vinegar, dark soy sauce, caster sugar, ketchup and sweet chilli sauce along with the 
+                      main ingredient beef.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                    <img src="assets/img/beef2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -339,9 +350,11 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Schezwan Chicken Noodles</h3>
+                    <p class="fst-italic">Schezwan noodles recipe is made with the spicy schezwan sauce and Hakka Noodles is made with soy sauce</p>
+                    <p>Schezwan noodles is an immensly popular Indo Chinese Dish served in our restuarant. These are the most flavourful, spicy and hot Noodles
+                      made using Schezwan sauce.
+                    </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/specials-3.png" alt="" class="img-fluid">
@@ -353,12 +366,12 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <h3>Chicken Brbeque</h3>
+                    <p class="fst-italic">Barbecue chicken consists of chicken parts or entire chickens that are barbecued, grilled or smoked</p>
+                    <p>There are many global and regional preparation techniques and cooking styles. Barbecue chicken is often seasoned or coated in a spice rub, barbecue sauce, or both</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
+                    <img src="assets/img/barb2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -367,12 +380,12 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Special Biriyani</h3>
+                    <p class="fst-italic">Biryani is a mixed rice dish originating among the royal khansamas of the durbar of Old Delhi, under the Mughal Empire, during the late 16th century of the then Mughal Court</p>
+                    <p>Biryani is one of the most popular dishes in South Asia, as well as among the diaspora from the region. Similar dishes are also prepared in other parts of the world such as in Iraq, Thailand, Singapore and Malaysia.[3] Biryani is the single most-ordered dish on Indian online food ordering and delivery services.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
+                    <img src="assets/img/biri2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -403,20 +416,23 @@
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Birthday Parties</h3>
                   <div class="price">
-                    <p><span>$189</span></p>
+                    <p><span>₹15000/-</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Bithday is one of the auspicious day in one's life. So make it a memorable one by hosting
+                    it in our restaurant. 
+                  Here we provide the following :
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> A wide open space suitable for outdoor events or programmes</li>
+                    <li><i class="bi bi-check-circled"></i> Open play area for kids.</li>
+                    <li><i class="bi bi-check-circled"></i> Along with the space , we also provide some of our signature
+                    dishes which will be included in the package. .</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    Once a day is booked , the whole property will be available to the customers and they can conduct or arrange 
+                    any programs as they wish and thus they can make their day a wonderful one! 
+
                   </p>
                 </div>
               </div>
@@ -430,20 +446,20 @@
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Private Parties</h3>
                   <div class="price">
-                    <p><span>$290</span></p>
+                    <p><span>₹20000/-</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Having fun with our beloved ones is always what we all dream for . So next time when
+                    you think of hosting private parties TI AMO should be your first choice! 
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> We provide all the necessary arrangements for hosting a private party.</li>
+                    <li><i class="bi bi-check-circled"></i> We do have a well expereienced event management group to 
+                    arrange all the events exceptionally well.</li>
+                    <li><i class="bi bi-check-circled"></i>Once a party is hosted here ,it will be remembered forever .</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    
                   </p>
                 </div>
               </div>
@@ -451,26 +467,23 @@
 
             <div class="swiper-slide">
               <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                <div class="col-lg-6"> <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Custom Parties</h3>
                   <div class="price">
-                    <p><span>$99</span></p>
+                    <p><span>₹7000/-</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Be any kind of Parties. Ti Amo provides the perfect place to host your any kind of parties.
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i>Customise your party </li>
+                    <li><i class="bi bi-check-circled"></i>Provide us the ideas you have and we will find a way to implement it</li>
+                    <li><i class="bi bi-check-circled"></i>Our team will help to make the event as you wished it in your mind</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                   So whatever be the nature of the party, We are here to provide a best experience to our customers.
                   </p>
                 </div>
               </div>
@@ -845,7 +858,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Subscribe to our newsletter to keep you informed </p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>

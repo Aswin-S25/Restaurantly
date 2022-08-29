@@ -21,20 +21,34 @@
                 $res = mysqli_query($conn, $sql);
                 //Count Rows
                 $count = mysqli_num_rows($res);
+                
+                
 
                 if($count==1)
                 {
                     //Detail Availble
                     $row=mysqli_fetch_assoc($res);
-
                     $food = $row['food'];
                     $price = $row['price'];
                     $qty = $row['qty'];
                     $status = $row['status'];
-                    $customer_name = $row['customer_name'];
-                    $customer_contact = $row['customer_contact'];
-                    $customer_email = $row['customer_email'];
-                    $customer_address= $row['customer_address'];
+                    $customer_id = $row['customer_id'];
+                    
+
+                    $sql2 = "SELECT * FROM tbl_customer WHERE id=$customer_id";
+                    //Execute Query
+                    $res2 = mysqli_query($conn, $sql2);
+                    //Count Rows
+                    $count2 = mysqli_num_rows($res2);
+                    if($count2 == 1)
+                    {
+                        $row2=mysqli_fetch_assoc($res2);
+                        $customer_name = $row2['customer_name'];
+                        $customer_email = $row2['customer_email'];
+                        $customer_address = $row2['customer_address'];
+                        $customer_contact = $row2['customer_contact'];
+                    }
+
                 }
                 else
                 {
@@ -146,19 +160,19 @@
                 $customer_address = $_POST['customer_address'];
 
                 //Update the Values
-                $sql2 = "UPDATE tbl_order SET 
+                $sql3 = "UPDATE tbl_order SET 
                     qty = $qty,
                     total = $total,
-                    status = '$status',
-                    customer_name = '$customer_name',
-                    customer_contact = '$customer_contact',
-                    customer_email = '$customer_email',
-                    customer_address = '$customer_address'
+                    status = '$status'
+                    -- customer_name = '$customer_name',
+                    -- customer_contact = '$customer_contact',
+                    -- customer_email = '$customer_email',
+                    -- customer_address = '$customer_address'
                     WHERE id=$id
                 ";
 
                 //Execute the Query
-                $res2 = mysqli_query($conn, $sql2);
+                $res4 = mysqli_query($conn, $sql3);
 
                 //CHeck whether update or not
                 //And REdirect to Manage Order with Message

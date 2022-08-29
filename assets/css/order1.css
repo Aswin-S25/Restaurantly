@@ -26,7 +26,7 @@
     text-align: left;
 }
 .text-white{
-    color: white;
+    color: #cda45e;
 }
 
 .clearfix{
@@ -35,11 +35,11 @@
 }
 
 a{
-    color: #ff6b81;
+    color: white;
     text-decoration: none;
 }
 a:hover{
-    color: #ff4757;
+    color: #cda45e;
 }
 
 .btn{
@@ -49,7 +49,7 @@ a:hover{
     border-radius: 5px;
 }
 .btn-primary{
-    background-color: #ff6b81;
+    background-color:#cda45e;
     color: white;
     cursor: pointer;
 }
@@ -64,6 +64,7 @@ h2{
 }
 h3{
     font-size: 1.5rem;
+    color:  wheat;
 }
 .float-container{
     position: relative;
@@ -82,6 +83,10 @@ fieldset{
 
 
 /* CSSS for navbar section */
+.navbar
+{
+    background-color: black;
+}
 
 .logo{
     width: 10%;
@@ -104,7 +109,8 @@ fieldset{
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url("https://github.com/vijaythapa333/web-design-course-restaurant/raw/master/images/bg.jpg");
+    /*background-image: url("https://github.com/vijaythapa333/web-design-course-restaurant/raw/master/images/bg.jpg");*/
+    background-color: #1a1814;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +166,7 @@ fieldset{
 .food-price{
     font-size: 1.2rem;
     margin: 2% 0;
+    color: white;
 }
 .food-detail{
     font-size: 1rem;
@@ -169,6 +176,7 @@ fieldset{
 
 /* CSS for Social */
 .social ul{
+    background-color: #1a1814;
     list-style-type: none;
 }
 .social ul li{
@@ -180,6 +188,7 @@ fieldset{
 .order{
     width: 50%;
     margin: 0 auto;
+    color: white;
 }
 .input-responsive{
     width: 96%;
@@ -192,7 +201,9 @@ fieldset{
 .order-label{
     margin-bottom: 1%; 
     font-weight: bold;
+    color: white;
 }
+
 
 .error
 {
