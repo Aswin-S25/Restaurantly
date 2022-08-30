@@ -40,7 +40,6 @@
             </form>
              <!--Login form ends here-->
 
-        <p class="text-center">Created By - <a href="">Aswin S</a></p>
     </div>
 </body>
 </html>
